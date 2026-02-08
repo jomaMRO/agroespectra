@@ -1,0 +1,192 @@
+/* Reset de márgenes y padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Fuente legible */
+    background-color: #d1dae5; /* Fondo suave */
+    color: #333; /* Color de texto oscuro para mejor lectura */
+    line-height: 1.6; /* Espaciado de línea para mejor legibilidad */
+    padding: 20px; /* Padding para no pegar el contenido a los bordes */
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #333; /* Mantener los títulos oscuros */
+    margin-bottom: 0.5em; /* Espaciado debajo de los títulos */
+}
+
+a {
+    color: #007bff; /* Un azul claro para enlaces */
+    text-decoration: none; /* Quitar subrayado por defecto */
+}
+
+a:hover {
+    text-decoration: underline; /* Subrayar al pasar el mouse para indicar clickeabilidad */
+}
+
+button, input[type="submit"], input[type="button"] {
+    background-color: #007bff; /* Fondo azul para botones */
+    color: white; /* Texto blanco para contraste */
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer; /* Cursor de mano para indicar que es clickeable */
+    border-radius: 5px; /* Bordes redondeados */
+}
+
+button:hover, input[type="submit"]:hover, input[type="button"]:hover {
+    background-color: #0056b3; /* Oscurecer el botón al pasar el mouse */
+}
+
+input, textarea {
+    width: 100%; /* Ancho completo para formularios */
+    max-width: 100%; /* Limitar el ancho máximo */
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd; /* Borde sutil */
+    border-radius: 5px; /* Bordes redondeados */
+}
+
+/* Centrar contenido */
+.centered-container {
+    display: flex;
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente */
+    height: 100vh; /* Usar toda la altura de la ventana */
+    width: 100%; /* Usar todo el ancho para asegurar centrado */
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Esto centrará todos los hijos directos en el eje cruzado */
+    width: 100%; /* Ajustar el ancho del formulario */
+    max-width: 360px; /* Máximo ancho del formulario */
+    padding: 20px; /* Padding para el formulario */
+    background-color: #fff; /* Fondo blanco para el formulario */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    border-radius: 8px; /* Bordes redondeados */
+}
+.x-application-logo {
+    width: 100px; /* Nuevo ancho del logo */
+    height: auto; /* Altura automática para mantener la proporción */
+}
+.custom-logo-size {
+    width: 130px; /* Nuevo ancho del logo */
+    height: auto; /* Altura automática para mantener la proporción */
+}
+
+/* recuerdame */
+
+.remember-me-container {
+    display: flex;
+    /* align-items: center; */
+    flex-wrap: nowrap;
+    margin-top: 10px;
+}
+
+.remember-me-checkbox {
+    order: 2; /* Coloca el checkbox en segundo lugar */
+    margin-left: 1px; /* Espacio entre el texto y el checkbox */
+}
+
+.remember-me-label {
+    order: 1; /* Asegura que la etiqueta aparezca primero */
+    color: #333;
+    font-size: 0.875rem;
+    white-space: nowrap;
+}
+
+.logo {
+    font-size: 24px; /* Tamaño del texto */
+    font-family: "Courier Prime", monospace;
+    color: rgb(32, 32, 32);
+    text-decoration: none; /* Remueve el subrayado del enlace */
+    text-shadow: 1px 1px 2px #000; /* Sombra suave negra */
+    padding-bottom:  40px;
+    
+}
+.logo:hover {
+    text-decoration: none; /* Remueve el subrayado al pasar el cursor */
+}
+
+.logo .spectra {
+    color:rgb(150, 31, 162); /* Color más oscuro para "Espectra" */
+    font-weight: bold; /* Negrita para "Espectra" */
+    text-shadow: 1px 1px 2px #000; /* Sombra suave negra */
+}
+
+
+
+/* Añade esto al final de public/css/app.css ...........................*/
+
+.dashboard-container {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    border: 1px solid rgb(150, 31, 162);
+}
+/* Actualización del CSS en public/css/app.css o custom.css */
+.nav-container {
+    background-color: #ffffff; /* Color de fondo */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Sombra para dar profundidad */
+    border-bottom: 1px solid rgb(150, 31, 162); /* Borde en la parte inferior */
+    padding: 10px 0; /* Ajuste vertical para un look más limpio */
+    max-width: 500px; /* Reducido de 1200px para un contenedor más pequeño */
+    margin: 0 auto; /* Centrado horizontal del contenedor */
+}
+
+
+.nav-content {
+    max-width: 900px; /* Ancho máximo reducido para un contenedor más compacto */
+    margin: 0 auto; /* Centrado horizontal en el contenedor padre */
+    display: flex; /* Activa Flexbox para la disposición interna */
+    align-items: center; /* Alinea verticalmente todos los elementos al centro */
+    justify-content: space-between; /* Distribuye el espacio entre los elementos uniformemente */
+    width: 100%; /* Usa el ancho completo del contenedor padre */
+    padding: 0 175px; /* Añade algo de padding para no pegar el contenido a los bordes */
+}
+.nav-content-2 {
+    max-width: 900px; /* Ancho máximo reducido para un contenedor más compacto */
+    margin: 0 auto; /* Centrado horizontal en el contenedor padre */
+    display: flex; /* Activa Flexbox para la disposición interna */
+    align-items: center; /* Alinea verticalmente todos los elementos al centro */
+    justify-content: space-between; /* Distribuye el espacio entre los elementos uniformemente */
+    width: 100%; /* Usa el ancho completo del contenedor padre */
+    padding: 0 175px; /* Añade algo de padding para no pegar el contenido a los bordes */
+}
+
+
+
+/* Estilos para los links y botones para consistencia visual */
+.nav-link, .dropdown-trigger, .responsive-nav-link {
+    background-color: #f8f8f8;
+    color: #333;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin: 0 5px; /* Añade un pequeño margen entre elementos */
+}
+
+.nav-link:hover, .dropdown-trigger:hover, .responsive-nav-link:hover {
+    background-color: #e2e2e2;
+}
+
+
+/* Estilos para botones y enlaces que actúan como botones */
+.dropdown-trigger, .nav-link, .responsive-nav-link {
+    background-color: rgb(150, 31, 162); /* Cambio de color de fondo a un azul */
+    color: white; /* Texto en color blanco para contraste */
+    border: none; /* Elimina el borde */
+}
+
+/* Estilo para el hover de los botones */
+.dropdown-trigger:hover, .nav-link:hover, .responsive-nav-link:hover {
+    background-color: #357ABD; /* Un azul más oscuro para el hover */
+}

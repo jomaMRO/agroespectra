@@ -1,0 +1,324 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Courier Prime", monospace;
+  /* Color de fondo para toda la página */
+  color: #333;
+  /* Color de texto predeterminado */
+}
+
+
+/* ----------cabezera--- */
+.header {
+  background-color: rgb(32, 32, 32);
+  /*position: fixed;*/
+  left: 0;
+  top: 0;
+  width: 100%;
+  text-align: center;
+  z-index: 100;
+  max-height: 100px;
+}
+
+.header .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 8px;
+}
+
+.header a {
+  color: white;
+  text-decoration: none;
+  font-family: "Courier Prime", monospace;
+}
+
+/* .header .logo {
+    font-family: 'Bungee', cursive;
+    color: #7EABD2;
+    
+  } */
+
+
+.header .logo img {
+  width: 105px;
+  /* Ajusta el ancho de la imagen según tus preferencias */
+  max-height: auto;
+  /* Ajusta la altura automáticamente para mantener la proporción */
+}
+
+li#inicio {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.logo-nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/* .logo {
+    letter-spacing: 15px;
+    font-size: 1.4em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  
+  } */
+
+.menu-icon {
+  display: none;
+}
+
+.navigation ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+}
+
+.navigation ul li {
+  display: inline-block;
+}
+
+.navigation ul li a {
+  display: block;
+  padding: 0.5rem 1rem;
+  transition: all 0.2s linear;
+  border-radius: 5px;
+  margin: 5px 0;
+}
+
+.navigation ul li a:hover {
+  color: rgb(150, 31, 162);
+  background: black;
+}
+
+.logo {
+  font-size: 24px;
+  /* Tamaño del texto */
+  font-family: 'Arial', sans-serif;
+  /* Fuente del texto */
+  color: #2b6d28;
+  /* Color verde base para "Agro" */
+  text-decoration: none;
+  /* Remueve el subrayado del enlace */
+  text-shadow: 1px 1px 2px #000;
+  /* Sombra suave negra */
+}
+
+.logo .spectra {
+  color: rgb(150, 31, 162);
+  /* Color más oscuro para "Espectra" */
+  font-weight: bold;
+  /* Negrita para "Espectra" */
+  text-shadow: 1px 1px 2px #000;
+  /* Sombra suave negra */
+}
+
+/* bannerprincipal */
+
+.banner {
+  background-color: #d1dae5;
+  text-align: center;
+  /* display: flex; */
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  /* Esto asegura que el banner ocupe al menos el 100% de la altura de la ventana */
+  position: relative;
+  overflow: hidden;
+  padding-top: 20px;
+}
+
+/* .banner-principal {
+  padding: 1rem 3rem 1.5rem 3rem;
+}
+ */
+
+/* Ajusta el tamaño de la imagen */
+.banner-principal img {
+
+  max-width: 100%;
+  height: auto;
+  max-height: 150px;
+  display: block;
+  /* Usar "block" en lugar de "inline-block" para centrar verticalmente */
+  margin: 0 auto;
+
+}
+
+/* .banner-principal h1 {
+  color: white;
+  margin: 0px 5px 30px 5px;
+} */
+
+.banner-principal h2 {
+  font-family: "Courier Prime", monospace;
+  font-size: 0.90rem;
+  color: black;
+}
+
+.banner-principal .texto {
+  max-width: 900px;
+  /* Ajusta este valor al ancho máximo deseado */
+  margin: 0 auto;
+  /* Centra el contenedor en la página */
+  padding: 20px;
+  /* Añade un poco de padding para que el texto no toque los bordes */
+  text-align: left;
+}
+
+
+.banner-inferior {
+  padding-bottom: 75px;
+  padding-top: 50px;
+}
+
+.banner-inferior button {
+  margin: 5px;
+}
+
+.banner-inferior .btn-primary {
+  color: white;
+  width: 180px;
+  height: 52px;
+  background-color: rgb(15, 15, 15);
+  border-width: 0;
+  font-family: "Courier Prime", monospace;
+  font-size: 1rem;
+  /* Tamaño de fuente relativo al tamaño del botón */
+  font-weight: bold;
+  /* Hace el texto más grueso */
+}
+
+.banner-inferior .btn-primary:hover {
+  color: rgb(150, 31, 162);
+  background-color: black;
+}
+
+
+/* Estilos para el pie de página */
+.footer {
+  background-color: #f8f9fa;
+  /* Color de fondo */
+  color: #6c757d;
+  /* Color del texto */
+  text-align: center;
+  /* Alineación del texto */
+  position: relative;
+  /* Posición relativa para el contenido */
+  bottom: 0;
+  /* Sitúa el pie de página en la parte inferior */
+  width: 100%;
+  /* Anchura completa del pie de página */
+  margin-top: auto;
+  /* Espacio superior automático para ajustar el contenido */
+  padding: 20px 0;
+  /* Relleno superior e inferior */
+}
+
+
+/* pie de pagina */
+
+footer {
+  min-height: 75px;
+  background-color: black;
+  /* Color de fondo */
+  color: rgb(143, 143, 143);
+  /* Color del texto */
+  text-align: center;
+  /* Alineación del texto */
+  position: relative;
+  /* Posición relativa para el contenido */
+  bottom: 0;
+  /* Sitúa el pie de página en la parte inferior */
+  width: 100%;
+  /* Anchura completa del pie de página */
+  margin-top: auto;
+  /* Espacio superior automático para ajustar el contenido */
+  padding: 20px 0;
+  /* Relleno superior e inferior */
+}
+
+/* Estilos base para dispositivos móviles */
+@media (max-width: 768px) {
+  .header .container {
+    padding: 35px;
+  }
+
+  .menu-icon {
+    display: block;
+    /* Muestra el ícono del menú */
+  }
+
+  .navigation ul {
+    display: none;
+    /* Oculta la lista de navegación por defecto */
+    width: 100%;
+    /* Asegura que ocupe todo el ancho disponible */
+    position: absolute;
+    /* Posicionamiento absoluto */
+    background-color: #202020;
+    /* Color de fondo para la lista desplegable */
+    top: 100px;
+    /* Coloca la lista debajo de la cabecera */
+    left: 0;
+    z-index: 1000;
+    /* Asegura que se muestre sobre otros elementos */
+  }
+
+  .navigation ul li {
+    display: block;
+    /* Los elementos de la lista ocupan toda la línea */
+    text-align: center;
+    /* Centra el texto de cada elemento */
+  }
+
+  .navigation ul li a {
+    padding: 10px 20px;
+    /* Aumenta el relleno para hacer cada enlace más accesible */
+  }
+}
+
+/* Estilos para el ícono de menú abierto/cerrado */
+#icon-open {
+  display: block;
+}
+
+#icon-close {
+  display: none;
+}
+
+#icon-open {
+  color: #007bff !important;
+  /* Fuerza el cambio de color */
+  font-size: 27px;
+  /* Ajusta el tamaño del ícono */
+
+}
+
+#icon-close {
+  color: #dc3545 !important;
+  /* Fuerza el cambio de color */
+  font-size: 27px;
+  /* Ajusta el tamaño del ícono */
+
+}
+
+.menu-icon {
+  cursor: pointer;
+  /* Cambia el cursor a un puntero para indicar que es clickeable */
+  box-sizing: content-box;
+  /* Cambia el box-sizing si es necesario */
+  position: absolute;
+  right: 0;
+  /* Asegúrate de que esté totalmente a la derecha */
+  top: 10px;
+  /* Ajusta según la altura de tu header */
+
+  padding: 0;
+  margin: 25px;
+  /* Elimina márgenes para evitar cualquier desplazamiento */
+
+}
